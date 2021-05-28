@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url('./img/background.jpg');
+  background-image: url('./img/background5.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -20,26 +20,30 @@ body {
 
 #root #panel {
   align-self: center;
-  width: 500px;
-  height: 600px;
+  width: 95%;
+  height: 650px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px 10px;
+
 }
 
 #root #panel input {
-  width: 480px;
+  width: 450px;
   font-size: 15px;
   height: 25px;
   padding-left: 10px;
   padding-right: 10px;
   outline: none;
   border: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #root #panel #list {
   width: 100%;
   height: 540px;
-  overflow-y: scroll;
+  overflow-y: scroll hidden;
 }
 
 table {
@@ -60,7 +64,6 @@ tr:nth-child(even) {
 
 #root #panel #buttons {
   display: flex;
-  background: white;
   border-radius: 0 0 10px 10px;
   width: 100%;
   height: 35px;
@@ -72,4 +75,6 @@ tr:nth-child(even) {
   height: 100%;
   padding-left: 10px;
   padding-right: 10px;
+  margin-left: 0,5px;
+  margin-right: 0,5px;
 }
