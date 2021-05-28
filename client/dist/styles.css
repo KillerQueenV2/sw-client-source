@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('./img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#root {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, .8);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+#root #panel {
+  align-self: center;
+  width: 500px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px 10px;
+}
+
+#root #panel input {
+  width: 480px;
+  font-size: 15px;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+  border: none;
+}
+
+#root #panel #list {
+  width: 100%;
+  height: 540px;
+  overflow-y: scroll;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#root #panel #buttons {
+  display: flex;
+  background: white;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  height: 35px;
+  justify-content: center;
+  margin: 0;
+}
+
+#root #panel #buttons button {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}

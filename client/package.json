@@ -1,0 +1,9 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "./../server/node_modules/.bin/esbuild src/index.ts --bundle --outfile=dist/bundle.js"
+  }
+}
